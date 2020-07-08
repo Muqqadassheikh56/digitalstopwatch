@@ -1,0 +1,33 @@
+.container{
+margin-top: 40px;
+border: 1px solid;
+padding: 70px !important; 
+width : 55% !important;
+box-shadow: 5px 10px 30px lightgreen inset;
+text-align: center !important;
+}
+h1{
+color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+button{
+background-color: lightseagreen;
+border: none;
+color: white;
+padding: 40px;
+text-align: center !important;
+text-decoration: none;
+display: inline-block;
+font-size: 10px;
+margin: 8px 5px 10px 10px !important;
+border-radius: 30rem !important;
+}
+h5{
+display: inline-block;
+font-weight: bold !important;
+margin-left: 5px;
+color: lightgrey;
+text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
+}
+
