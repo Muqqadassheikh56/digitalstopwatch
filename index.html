@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Stop Watch</title>
+    <title>Stop Watch</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -12,35 +12,31 @@
 
 </head>
 
-<body style="background-color: whitesmoke;">
-    <div class="text-center mt-5">
-        <h1> Digital Stop watch</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <button id="hour"> 00 </button> 
-                    <h5>Hours</h5> 
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <button id="min"> 00 </button>
-                    <h5>Mints</h5>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <button id="sec"> 00 </button>
-                    <h5>Seconds</h5>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <button id="msec"> 00 </button>
-                    <h5>Milliseconds</h5>
-                </div>
-            </div>
+<body>
+    <div class="wrap">
+        <div id="timer">
+            <svg width = "260" height="260">
+<circle class="defaultCircle" cx="125" cy="125" r="120" stroke = "#ff88fb" stroke-width = "10" fill="none" stroke-linecap="round">
+</circle>
+<circle class="animateCircle" cx="125" cy="125" r="120" stroke = "#d459cb" stroke-width = "10" fill="none" stroke-linecap="round">
+
+            </svg>
+            <span id="hour">0</span> :
+            <span id="min">0</span> :
+            <span id="sec">0</span> :
+            <span id="msec">0</span> 
         </div>
-        <div>
-            <br>
-            <button type="button" class="btn btn-outline-secondary" onclick="start()" id="btn">Start</button>
-            <button type="button" class="btn btn-outline-success" onclick="pause()"> Pause</button>
-            <button type="button" class="btn btn-outline-danger" onclick="reset()">Reset</button>
+        <p>Time Start Now</p>
+        <div class="option">
+            <button type="button" class="btn btn-outline-secondary" onclick="start()" id="btn"> <i class="fa fa-play"> </i></button>
+            <button type="button" class="btn btn-outline-success" onclick="pause()"> <i class="fa fa-pause"></i> </button>
+            <button type="button" class="btn btn-outline-danger" onclick="reset()"> <i class="fa fa-undo"></i></button>
+
+
+           
+
         </div>
+
     </div>
 
 
@@ -50,20 +46,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    <script src="app.js"> </script>
-
-
+    <script src="app.js"></script>
 </body>
 
 </html>

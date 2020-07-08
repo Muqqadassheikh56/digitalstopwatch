@@ -9,13 +9,16 @@ var msecHeading = document.getElementById("msec");
 var interval;
 
 
-function timer() {
+function timer() 
+{
     msec++
-    msecHeading.innerHTML = msec;
-    if (msec >= 100) {
+    msecHeading.innerHTML =   msec;
+    if (msec >= 100)
+     { 
         sec++
         secHeading.innerHTML = sec;
         msec = 0;
+
     }
     else if (sec >= 60) {
         min++
@@ -32,6 +35,7 @@ function timer() {
 function start() {
     interval = setInterval(timer, 10);
     document.getElementById("btn").disabled = true;
+
 }
 function pause() {
     clearInterval(interval)
@@ -45,4 +49,5 @@ function reset() {
     msecHeading.innerHTML = sec;
     pause()
 }
+
 
