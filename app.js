@@ -39,6 +39,9 @@ function start() {
 }
 function pause() {
     clearInterval(interval)
+    document.getElementById("btn").disabled = false;
+
+
 }
 function reset() {
     min = 0;
@@ -48,6 +51,9 @@ function reset() {
     secHeading.innerHTML = sec;
     msecHeading.innerHTML = sec;
     pause()
+    document.getElementById("btn").disabled = false;
+    document.getElementById("btn2").disabled = true;
+
 }
 
 
