@@ -35,12 +35,13 @@ function timer()
 function start() {
     interval = setInterval(timer, 10);
     document.getElementById("btn").disabled = true;
+    document.getElementById("btn1").disabled = false;
+
 
 }
 function pause() {
     clearInterval(interval)
     document.getElementById("btn").disabled = false;
-
 
 }
 function reset() {
@@ -52,8 +53,8 @@ function reset() {
     msecHeading.innerHTML = sec;
     pause()
     document.getElementById("btn").disabled = false;
-    document.getElementById("btn2").disabled = true;
+    document.getElementById("btn1").disabled = true;
+
 
 }
-
 

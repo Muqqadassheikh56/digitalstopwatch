@@ -1,16 +1,18 @@
 body{
-    /* margin: 0; padding: 0; box-sizing: border-box; */
-    font-family: sans-serif;
-    background: linear-gradient(to left, purple , white);
-    font-weight: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+margin: 0; padding: 0; box-sizing: border-box;
+font-family: sans-serif;
+background: linear-gradient(to left, lightblue  , gray);
+font-weight: 300;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
 }
-
-
-.wrap{
+h1{
+ color: white;
+ text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px red;
+    }
+.container{
     display: inline-block;
     min-width : 360px;
     min-height: 400px;
@@ -19,38 +21,28 @@ body{
     box-shadow: 0 5px 25px #0000004a;
     border-radius: 8px;
     text-align: center;
+    font-weight: bold;
+    font-size: 27px;
+    margin-top: 10px;
 }
-#timer{
+#circle {
     position: relative;
-    width: 250px;
-    height: 250px;
-    line-height: 250px;
-    border-radius: 50%;
-    font-size: 32px;
-    margin: 0 auto;
-    background-color: white;
-}
-p{
-    font-weight: 400;
-    color: gray;
-    padding: 30px 0;
-}
-.option a{
-display :inline-block;
-margin: 0 10px;
-text-decoration: none;
-}
-button{
-    padding: 35px 30px;
-       width: 20%;
-}
-
-/* circle animation */
-
-#timer svg{
+    background-color: #09f;
+    margin: 20px auto;
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+    border: 2px solid brown;
+  }
+  #text {
     position: absolute;
-    left:0
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+button{
+    width: 30%;
 }
-.defaultCircle{
-    opacity: 0.3;
-}
+
+
