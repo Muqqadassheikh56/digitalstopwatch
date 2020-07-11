@@ -14,26 +14,24 @@
     <div class="text-center mt-2">
         <h1> Digital Stop Watch</h1>
         <div class="container">
-            <div id = "circle">
-<div id = "text">
-            <span id="hour">0</span> :
-            <span id="min">0</span> :
-            <span id="sec">0</span> :
-            <span id="msec">0</span>
-        <div>
+            <div id="circle">
+                <div id="text">
+                    <span id="hour">0</span> :
+                    <span id="min">0</span> :
+                    <span id="sec">0</span> :
+                    <span id="msec">0</span>
+                    <div>
+                    </div>
+                </div>
+            </div>
+            <p style="font-size: 15px; font-weight: normal;" id="txt">Press the <b>Start</b> Button</p>
         </div>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary" onclick="start()" id="start" >Start</button>
+        <button type="button" class="btn btn-warning" onclick="pause()" id="pause" disabled> Pause</button>
+        <button type="button" class="btn btn-dark" onclick="reset()" id="reset" disabled>Reset</button>
     </div>
-    </div>
-    </div>
-            <br>
-            <br>
-            <button type="button" class="btn btn-primary" onclick="start()" id="btn">Start</button>
-            <button type="button" class="btn btn-warning" onclick="pause()" id="btn1"> Pause</button>
-            <button type="button" class="btn btn-dark" onclick="reset()">Reset</button>
-        </div>
-        <script src="app.js"> </script>
-
-
+    <script src="app.js"> </script>
 </body>
-
 </html>

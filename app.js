@@ -8,7 +8,6 @@ var secHeading = document.getElementById("sec");
 var msecHeading = document.getElementById("msec");
 var interval;
 
-
 function timer() 
 {
     msec++
@@ -32,29 +31,34 @@ function timer()
         min / 60;
     }
 }
+
 function start() {
     interval = setInterval(timer, 10);
-    document.getElementById("btn").disabled = true;
-    document.getElementById("btn1").disabled = false;
-
-
+    document.getElementById("start").disabled = true;
+    document.getElementById("pause").disabled = false;
+    document.getElementById("reset").disabled = false;
+    document.getElementById("txt").innerHTML = "Your time is <b>Start </b> Now";
 }
+
 function pause() {
     clearInterval(interval)
-    document.getElementById("btn").disabled = false;
+    document.getElementById("start").innerHTML = "Resume";
+    document.getElementById("start").disabled = false;
+    document.getElementById("pause").disabled = true;
+    document.getElementById("txt").innerHTML = "Your time is<b>Pause</b> Now";
 
 }
+
 function reset() {
-    min = 0;
-    sec = 0;
-    msec = 0;
-    minHeading.innerHTML = min;
-    secHeading.innerHTML = sec;
-    msecHeading.innerHTML = sec;
-    pause()
-    document.getElementById("btn").disabled = false;
-    document.getElementById("btn1").disabled = true;
-
+    minHeading.innerHTML = 0;
+    secHeading.innerHTML = 0;
+    msecHeading.innerHTML = 0;
+    hourHeading.innerHTML = 0;
+    clearInterval(interval); 
+    document.getElementById("start").innerHTML = "Start";
+    document.getElementById("start").disabled = false;
+    document.getElementById("pause").disabled = true;
+    document.getElementById("reset").disabled = true;
+    document.getElementById("txt").innerHTML = "To Start again: Press the <b>Start</b> Button" ;
 
 }
-

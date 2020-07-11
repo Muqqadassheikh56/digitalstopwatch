@@ -14,7 +14,7 @@ h1{
     }
 .container{
     display: inline-block;
-    min-width : 360px;
+    min-width : 400px;
     min-height: 400px;
     padding: 50px 15px;
     background-color:white;
@@ -27,19 +27,18 @@ h1{
 }
 #circle {
     position: relative;
-    background-color: #09f;
+    background-color:black;
     margin: 20px auto;
-    width: 350px;
-    height: 350px;
+    width: 320px;
+    height: 320px;
+    box-shadow: 0 0 25px royalblue, 0 0 25px royalblue, 0 0 25px royalblue;
     border-radius: 200px;
-    border: 2px solid brown;
+  border: 6px solid royalblue;
   }
+  
   #text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
+    margin-top: 130px;
+    color: #ffffff;
   }
 button{
     width: 30%;
